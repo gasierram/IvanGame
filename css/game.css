@@ -1,0 +1,14 @@
+.game{
+    background-image: url("../img/game.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.count{
+    background-image: url("../img/count.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+}

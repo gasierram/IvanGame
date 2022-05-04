@@ -1,6 +1,6 @@
 body, html {
     height: 100%;
-  }
+}
 
 .bg {
     /* The image used */
@@ -16,7 +16,7 @@ body, html {
 }
 .page-holder {
     min-height: 100vh;
-  }
+}
 
 .tittle-boxs{
     background-image: url("../img/tittleBox.png");
@@ -37,39 +37,28 @@ body, html {
     color: white;
   
  
-  }
-  .paralelo::after {
-    background: transparent;
-	position: absolute;
-	content: '';
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-    border-radius: 25% 10%;
-    border:2px solid black;
-	-webkit-transform: skew(-9deg);
-	-moz-transform: skew(-9deg); 
-	-o-transform: skew(-9deg); 
-	/* z-index: -1; */
+}
+
+.paralelo {
+    border: 30px solid transparent;
+    -moz-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Old firefox */
+    -webkit-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Safari */
+    -o-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Opera */
+    border-image:url("../img/tittleBox.png") 30 30 stretch;
   }
 
-  .head-game{
-      padding-top: 50px;
-  }
+.head-game{
+    padding-top: 50px;
+}
 
-  .head-img{
-      height: 300px;
-  }
-
-
-
-
-
+.head-img{
+    height: 200px;
+}
 
 .logo{
     height: 20px;
 }
+
 .assistant {
     height: auto;
 }
@@ -78,6 +67,7 @@ body, html {
     padding-left: 60px;
     padding-right: 75px;
 }
+
 .grupo-control-radio-personalizado {
     position: relative;
     padding-left: 35px;
@@ -113,6 +103,7 @@ body, html {
     top: 0;
     cursor: pointer;
 }
+
 .icono-placeholder{
     background: transparent;
     position: relative; 
@@ -130,14 +121,13 @@ body, html {
     background: radial-gradient(circle, rgba(237,30,121,1) 0%, rgba(159,44,137,1) 58%, rgba(102,45,145,1) 83%, rgba(102,45,145,1) 100%);
 }
 
-
 .input-group-prepend .input-group-text {
     background-color: transparent;
     border-color: transparent;
     color: white;
 }
 
-.input-group{
+.input-group-index{
     border-color: white;
     background: rgb(237,30,121);
     background: radial-gradient(circle, rgba(237,30,121,1) 0%, rgba(159,44,137,1) 43%, rgba(102,45,145,1) 75%, rgba(45,21,64,1) 100%);
@@ -147,3 +137,6 @@ body, html {
 , .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child){
     height: 20px;
 }
+
+
+

@@ -1,0 +1,107 @@
+.input-cat-yw[type=checkbox] {
+    display:none;
+}     
+.input-cat-yw[type=checkbox] + label
+{
+    background: transparent;
+    background-image: url("../img/yellow-cat1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 122px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+.input-cat-yw[type=checkbox]:checked + label
+{
+    background: transparent;
+    background-image: url("../img/yellow-cat1.png");
+
+    height: 104px;
+    width: 244px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-bottom: 0px;
+}
+
+.input-cat-gr[type=checkbox] {
+    display:none;
+}
+    
+.input-cat-gr[type=checkbox] + label
+{
+    background: transparent;
+    background-image: url("../img/green-cat1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 122px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+.input-cat-gr[type=checkbox]:checked + label
+{
+    background: transparent;
+    background-image: url("../img/greencat.png");
+    height: 104px;
+    width: 244px;
+    display:inline-block;
+    margin-bottom: 0px!important;
+}
+
+
+.input-cat-pr[type=checkbox] {
+    display:none;
+}
+        
+.input-cat-pr[type=checkbox] + label
+{
+    background: transparent;
+    background-image: url("../img/purple-cat1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 122px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-bottom: 0px!important;
+
+}
+.input-cat-pr[type=checkbox]:checked + label
+{
+    background-image: url("../img/purplecat.png");
+    height: 104px;
+    width: 244px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+.input-cat-bl[type=checkbox] {
+    display:none;
+}
+        
+.input-cat-bl[type=checkbox] + label
+{
+    background: transparent;
+    background-image: url("../img/blue-cat1.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 52px;
+    width: 122px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    margin-bottom: 0px!important;
+
+}
+.input-cat-bl[type=checkbox]:checked + label
+{
+    background: transparent;
+    background-image: url("../img/bluecat.png");
+    height: 104px;
+    width: 244px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
