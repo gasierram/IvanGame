@@ -12,3 +12,12 @@
     background-size: cover;
     background-blend-mode: lighten;
 }
+
+
+.img-quest {
+    border: 20px solid transparent;
+    -moz-border-image:url("../img/quest-bg.png") 30 30 round; /* Old firefox */
+    -webkit-border-image:url("../img/quest-bg.png") 30 30 round; /* Safari */
+    -o-border-image:url("../img/quest-bg.png") 30 30 round; /* Opera */
+    border-image:url("../img/quest-bg.png") 30 30 round;
+  }

@@ -1,22 +1,52 @@
-body, html {
+@font-face {
+    font-family: 'AcherusGrotesque-MediumItalic';
+    src: url('fonts/AcherusGrotesque-MediumItalic.woff2') format('woff2'),
+    url('fonts/AcherusGrotesque-MediumItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+  
+@font-face {
+    font-family: 'AcherusGrotesque-Medium';
+    src: url('fonts/AcherusGrotesque-Medium.woff2') format('woff2'),
+    url('fonts/AcherusGrotesque-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+
+@font-face {
+    font-family: 'AcherusGrotesque-Bold';
+    src: url('fonts/AcherusGrotesque-Bold.woff2') format('woff2'),
+    url('fonts/AcherusGrotesque-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+html {
     height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
 }
 
 .bg {
     /* The image used */
-    background-image: url("../img/background.png");
-  
-    /* Full height */
-    height: 100%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
+    background-image: url(../img/background.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-position: center center;
+    background-color: rgba(85, 34, 56, 0);
+    
 }
-.page-holder {
+/* .page-holder {
     min-height: 100vh;
-}
+} */
 
 .tittle-boxs{
     background-image: url("../img/tittleBox.png");
@@ -27,26 +57,43 @@ body, html {
     width:auto;
     height: auto;
 }
+.button {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
 
+.main-title{
+    font-family: 'AcherusGrotesque-MediumItalic';
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: -5px;
+    float: left;
+    line-height: 1em;
+    
+}
 .paralelo {
     position: relative;
     padding: .6em 1em;
     margin: .6em;
     background: transparent;
-    font-size: 30px;
+    font-size: 20px;
     color: white;
-  
- 
-}
 
-.paralelo {
-    border: 30px solid transparent;
-    -moz-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Old firefox */
-    -webkit-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Safari */
-    -o-border-image:url("../img/tittleBox.png") 30 30 stretch; /* Opera */
-    border-image:url("../img/tittleBox.png") 30 30 stretch;
+    border: 15px solid transparent;
+    -moz-border-image:url("../img/tittleBox.png") 15 27 stretch; /* Old firefox */
+    -webkit-border-image:url("../img/tittleBox.png") 15 27 stretch; /* Safari */
+    -o-border-image:url("../img/tittleBox.png") 15 27 stretch; /* Opera */
+    border-image:url("../img/tittleBox.png") 25 27 stretch;
   }
-
+.assist{
+    height: 167px;
+}
+  .assistant{
+      height: 100px;
+  }
 .head-game{
     padding-top: 50px;
 }
@@ -59,10 +106,30 @@ body, html {
     height: 20px;
 }
 
-.assistant {
-    height: auto;
-}
-
+.form {
+    float: left;
+    margin: 10px 0;
+    width: 46%;
+    margin-left: 24%;
+  }
+  
+  .form input{
+    width: 100%;
+    height: 25px;
+    margin: 5px 0;
+    padding: 8px;
+    border-color: white;
+    background: rgb(237,30,121);
+    background: radial-gradient(circle, rgba(237,30,121,1) 0%, rgba(159,44,137,1) 43%, rgba(102,45,145,1) 75%, rgba(45,21,64,1) 100%);
+    border: 1px solid white;
+    color: white!important;
+    font-family: 'AcherusGrotesque-Medium';
+    font-size: 11px;
+    border-radius: 15px;
+  }
+  input::placeholder {
+    color: white;
+  }
 .pad{
     padding-left: 60px;
     padding-right: 75px;
@@ -131,6 +198,14 @@ body, html {
     border-color: white;
     background: rgb(237,30,121);
     background: radial-gradient(circle, rgba(237,30,121,1) 0%, rgba(159,44,137,1) 43%, rgba(102,45,145,1) 75%, rgba(45,21,64,1) 100%);
+    margin: 5px 0;
+    padding: 8px;
+    border-color: white;
+    border: 1px solid white;
+    color: white!important;
+    font-family: 'AcherusGrotesque-Medium';
+    font-size: 11px;
+    border-radius: 15px;
 }
 
 .input-group, .input-group-prepend, .input-group-text, .inputs
@@ -140,3 +215,23 @@ body, html {
 
 
 
+@media (max-width: 414px ) {
+
+    .form {
+      float: left;
+      margin: 10px 0;
+      width: 78%;
+      margin-left: 8%;
+    }
+  }
+  
+  
+  @media (max-width: 380px ) {
+    
+    .form {
+        float: left;
+        margin: 10px 0;
+        width: 78%;
+        margin-left: 8%;
+    }
+}
