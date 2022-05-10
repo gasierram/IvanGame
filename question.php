@@ -121,33 +121,9 @@
                         </form>
                     </div>
 
-                    <div class="rrss">
-                        <nav class="navbar  navbar-light navbar-expand-lg navbar-template mx-auto" style="width: 200px;">
-                            <div class="d-flex flex-row order-2 order-lg-3">
-                                <ul class="navbar-nav flex-row">
-                                    <li class="nav-item"><a class="nav-link px-1" href="#" style="height: 50%;"><img src="img/share.png" alt="web"></a></li>
-                                    <li class="nav-item"><a class="nav-link px-1" href="#" style="height: 50%;"><img src="img/facebook.png" alt="facebook"></a></li>
-                                    <li class="nav-item"><a class="nav-link px-1" href="#" style="height: 50%;"><img src="img/whatsapp.png" alt="whatsapp"></a></li>
-                                    <li class="nav-item"><a class="nav-link px-1" href="#" style="height: 50%;"><img src="img/twitter.png" alt="twitter"></a></li>
-                                </ul>
-                            </div>
-                        </nav>
-    
-    
-    
-    
-    
-                        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
-    
-                            <ul>
-                                <li><a href="#"><img src="img/share.png" alt="web"></a></li>
-                                <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
-                                <li><a href="#"><img src="img/whatsapp.png" alt="whatsapp"></a></li>
-                                <li><a href="#"><img src="img/twitter.png" alt="twitter"></a></li>
-                            </ul>
-                        </div>
-    
-                    </div>    
+                    <?php
+                include("nav-rss.php");
+                ?>  
                 </div>
                 <div class="col-lg-4">
                 </div>

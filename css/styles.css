@@ -64,20 +64,25 @@ body {
     margin-bottom: 20px;
 }
 
+.silvia-dv{
+    margin-top:60px;
+}
+
 .main-title{
     font-family: 'AcherusGrotesque-MediumItalic';
     color: white;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
     margin-top: -5px;
     float: left;
     line-height: 1em;
-    
 }
 .paralelo {
     position: relative;
-    padding: .6em 1em;
-    margin: .6em;
+    /* padding: .6em 1em; */
+    /* margin: .6em; */
+    margin: 0 auto!important;
+    /* width: 70%; */
     background: transparent;
     font-size: 20px;
     color: white;
@@ -87,13 +92,15 @@ body {
     -webkit-border-image:url("../img/tittleBox.png") 15 27 stretch; /* Safari */
     -o-border-image:url("../img/tittleBox.png") 15 27 stretch; /* Opera */
     border-image:url("../img/tittleBox.png") 25 27 stretch;
-  }
+    display: flex;
+    justify-content: center;
+}
 .assist{
     height: 167px;
 }
-  .assistant{
-      height: 100px;
-  }
+.assistant{
+    height: 100px;
+}
 .head-game{
     padding-top: 50px;
 }
@@ -104,29 +111,35 @@ body {
 
 .logo{
     height: 20px;
+    margin-top: 10px;
+    
+}
+.logo-u{
+    height: inherit; 
+    margin-left: 20px;
 }
 
 .form {
     float: left;
     margin: 10px 0;
-    width: 46%;
-    margin-left: 24%;
-  }
+    width: 60%; 
+    margin-left: 20%;
+}
   
-  .form input{
+.form input{
     width: 100%;
-    height: 25px;
+    height: 22px;
     margin: 5px 0;
     padding: 8px;
     border-color: white;
     background: rgb(237,30,121);
     background: radial-gradient(circle, rgba(237,30,121,1) 0%, rgba(159,44,137,1) 43%, rgba(102,45,145,1) 75%, rgba(45,21,64,1) 100%);
-    border: 1px solid white;
+    border: .1em ridge white;
     color: white!important;
-    font-family: 'AcherusGrotesque-Medium';
+    font-family: 'AcherusGrotesque-Medium', 'FontAwesome';
     font-size: 11px;
     border-radius: 15px;
-  }
+}
   input::placeholder {
     color: white;
   }
@@ -135,41 +148,74 @@ body {
     padding-right: 75px;
 }
 
-.grupo-control-radio-personalizado {
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 20px;
+
+
+
+/* Contenedor */
+.acepto {
     color: white;
-}
-
-.radio-personalizado {
-    display: none;
-}
-
-.radio-personalizado:checked + .control-radio-personalizado-imagen:before {
-    background-image: url('https://pbs.twimg.com/profile_images/752923302000295936/QP7SrVMv_400x400.jpg');
-    background-size: 20px 20px;
-    display: inline-block;
-    width: 20px; 
-    height: 20px;
-    content:"";
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-  
-.control-radio-personalizado-imagen:before {
-    background-image: url('../img/radio-tyc.png');
-    background-size: 20px 20px;
-    display: inline-block;
-    width: 20px; 
-    height: 20px;
-    content:"";
-    position: absolute;
-    left: 0;
-    top: 0;
+    font-family: 'AcherusGrotesque-Medium';
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     cursor: pointer;
-}
+    font-size: 10px;
+  }
+/* los checkboxes */
+#c1 input:checked ~ .checkmark {
+    background-color: transparent;
+    }
+    
+    /* escondemos el default checkbox */
+.acepto input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* creamos un custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(238, 238, 238, 0);
+  }
+  
+  /* Al pasar el mouse encima, lo ponemos gris */
+  .acepto:hover input ~ .checkmark {
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+  /* creamos el marcador (escondido al no seleccionar) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* mostramos el marcador al seleccionar */
+  .acepto input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* estilo del marcador */
+  .acepto .checkmark:after {
+    /* left: 9px; */
+    /* top: 5px; */
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/radio-tyc.png');
+    background-size: contain;
+    
+  }
 
 .icono-placeholder{
     background: transparent;
@@ -233,5 +279,31 @@ body {
         margin: 10px 0;
         width: 78%;
         margin-left: 8%;
+    }
+}
+
+@media (max-width: 414px ) {
+
+    .logo{
+        margin-bottom: 10px;
+
+    }
+    .logo-u{
+        height: 20px;
+        margin-left: 0;
+        
+
+    }
+  }
+  
+  
+  @media (max-width: 380px ) {
+    .logo{
+        margin-bottom: 10px;
+    }
+    .logo-u{
+        height: 20px;
+        margin-left: 0;
+        
     }
 }
