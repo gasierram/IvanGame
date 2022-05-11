@@ -21,3 +21,60 @@
     -o-border-image:url("../img/quest-bg.png") 30 30 round; /* Opera */
     border-image:url("../img/quest-bg.png") 30 30 round;
   }
+
+.help-dv{
+    margin:0 0 0 0;
+}
+.help-dv:hover {
+    background-color: rgba(190, 96, 207, 20);
+
+}
+
+
+.help-cat{
+    width: auto; 
+    height: 80%;
+}
+
+.pad{
+    padding-top: 5px;
+}
+.question{
+    height: 25px;
+    background-image: url("../img/quest-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-blend-mode: lighten;
+    color:white;
+    margin: 4px 0 4px 0;
+}
+.question > label {
+    font-family: 'AcherusGrotesque-Medium';
+    font-size: 9px;
+}
+
+    
+
+@media (max-width: 414px ) {
+
+    .question{
+
+        margin: 10px 0 4px 0;
+    }
+  }
+  
+  
+  @media (max-width: 380px ) {
+    .question{
+
+        margin: 10px 0 4px 0;
+    }
+}
+
+.question input[type=radio]:active + label {
+    color: rgba(190, 96, 207, 20);
+  }
+
+
+  

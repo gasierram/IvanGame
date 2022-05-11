@@ -53,54 +53,63 @@
                     <div class=" container " >
                         <div class="row"  >
                             <div class="col d-flex align-items-start flex-column" >
-                                <img src="img/yellow-op.png" class="img-responsive" alt="assistant" style="width: auto; height: 55%;" >
-                                <img src="img/green-op.png" class="img-responsive" alt="assistant" >
-                                <img src="img/purple-op.png" class="img-responsive" alt="assistant" >
-                                <img src="img/blue-op.png" class="img-responsive" alt="assistant" >
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/yellow-op.png" class="help-cat" alt="assistant" >
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/green-op.png" class="help-cat" alt="assistant" >
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/purple-op.png" class="help-cat" alt="assistant" >
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/blue-op.png" class="help-cat" alt="assistant" >
+                                </a>
                             </div>
                             <div class="col d-flex align-items-end flex-column" >
-                                <img src="img/help1.png" class="img-responsive" alt="assistant">
-                                <img src="img/help2.png" class="img-responsive" alt="assistant">
-                                <img src="img/help3.png" class="img-responsive" alt="assistant">
-                                <img src="img/help4.png" class="img-responsive" alt="assistant">
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/help1.png" class="help-cat" alt="assistant">
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/help2.png" class="help-cat" alt="assistant">
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/help3.png" class="help-cat" alt="assistant">
+                                </a>
+                                <a class="help-dv" data-toggle="modal" data-target="#exampleModalCenter">
+                                    <img src="img/help4.png" class="help-cat" alt="assistant">
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
                     <div class="pad text-center">
                         <form class="form-signin" action="categories.php" method="post">
-                            <!-- <div class="input-group mb-3">      
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text fa fa-user" id="inputGroup-sizing-sm"></span>
-                                </div>                        
-                                <input type="text" class="form-control icono-placeholder" placeholder="A: Lorem" aria-label="name" aria-describedby="basic-addon1">
+                            <div class="question">
+                                <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="" for="flexRadioDefault1">
+                                    A: Lorem
+                                </label>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text inputs fa fa-envelope" id="inputGroup-sizing-sm"></span>
-                                </div>
-                                <input type="email" class="form-control icono-placeholder" placeholder="B: Dolor" aria-label="email" aria-describedby="basic-addon2">
+                            <div class="question">
+                                <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="" for="flexRadioDefault2">
+                                    B: Ipsum
+                                </label>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <i class="input-group-text fa-thin fa-mobile-screen" id="inputGroup-sizing-sm"></i>
-                                </div>
-                                <input type="text" class="form-control icono-placeholder" placeholder="C: Ipsum" aria-label="cellphone" aria-describedby="basic-addon3">
-                            </div>                              
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <i class="input-group-text fa-thin fa-mobile-screen" id="inputGroup-sizing-sm"></i>
-                                </div>
-                                <input type="text" class="form-control icono-placeholder" placeholder="D: Sit Amet" aria-label="cellphone" aria-describedby="basic-addon3">
-                            </div>      -->
+                            <div class="question">
+                                <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="" for="flexRadioDefault2">
+                                    C: Dolor
+                                </label>
+                            </div>
+                            <div class="question">
+                                <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="" for="flexRadioDefault2">
+                                    D: Sit Amet
+                                </label>
+                            </div>                                                        
                             <!-- <div>
-                                <button class="img-quest" type="submit" style="border: 0; background: transparent">
-                                    <p>A: Lorem</p>
-                                    <img src="img/quest-bg.png" width="100%" height="20" alt="submit" />
-                                </button>
-                                
-                            </div>                        -->
-                            <div>
                                 <button type="submit" style="border: 0; background: transparent">
                                     <img src="img/quest-bg.png" width="100%" height="20" alt="submit" />
                                 </button>
@@ -117,7 +126,7 @@
                                     <img src="img/quest-bg.png" width="100%" height="20" alt="submit" />
                                 </button>
                                 
-                            </div>     
+                            </div>      -->
                         </form>
                     </div>
 
@@ -131,6 +140,31 @@
         </div>
     </div>    
  
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Nombre Ayuda</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            ...
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary">Aceptar</button>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+
 
 
 
